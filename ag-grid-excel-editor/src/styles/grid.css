@@ -1,0 +1,95 @@
+.formula-bar-container {
+    display: flex;
+    align-items: center;
+    background: #f7f9fa;
+    border: 1px solid #dcdcdc;
+    border-bottom: 2px solid #dcdcdc;
+    padding: 4px 8px;
+    height: 40px;
+    gap: 4px;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.formula-bar-action-btn {
+    background: none;
+    border: 1px solid #ccc;
+    padding: 4px 8px;
+    cursor: pointer;
+    color: #666;
+    border-radius: 3px;
+    font-size: 14px;
+    min-width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formula-bar-action-btn:hover:not(:disabled) {
+    background: #e3f2fd;
+    border-color: #1976d2;
+    color: #1976d2;
+}
+
+.formula-bar-action-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.formula-bar-icon {
+    color: #666;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 8px;
+    padding: 4px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    min-width: 30px;
+    text-align: center;
+}
+
+.formula-bar-input {
+    border: 1px solid #ccc;
+    outline: none;
+    background: #fff;
+    padding: 6px 10px;
+    font-size: 14px;
+    flex: 1;
+    border-radius: 3px;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.formula-bar-input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 1px #4CAF50;
+}
+
+.formula-bar-input:disabled {
+    background: #f5f5f5;
+    color: #999;
+}
+
+.ag-theme-alpine {
+    --ag-font-family: "Segoe UI", Arial, sans-serif;
+    --ag-font-size: 14px;
+    --ag-row-height: 32px;
+}
+
+.ag-cell-focused {
+    border: 2px solid #4CAF50 !important;
+    box-shadow: inset 0 0 0 1px #4CAF50;
+}
+
+.ag-cell-edit-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+}
+
+.ag-cell-editor {
+    background: #f9f9f9 !important;
+    border: 2px solid #4CAF50 !important;
+}
